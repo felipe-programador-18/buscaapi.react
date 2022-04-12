@@ -13,7 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
    color: #e1e1e1; 
-   background-color:#1e1e1e;
+   background-color:#090808;
    width: 100%;
    min-width: 100vh;
   display: flex;
@@ -57,8 +57,19 @@ code {
 .container .search-results ul li {
  font-size: 1.5rem;
  font-weight: bold;
+ line-height: 2.5rem;
  color: rgba(255,255,255,0.5);
  list-style-type: '\2b50';
  list-style-position: inside;
  
+}
+
+.continer .search-results ul li:hover{
+  cursor: pointer;
+  color: rgba(255,255,255, 0.8);
+  background-color: rgba(255,255,255,0.05) ;
+}
+
+.container .search-results ul li span {
+  padding-left: 1ch;
 }

@@ -1,12 +1,25 @@
 import './App.css'
+import {useState} from 'react'
 
 function App() {
+  const HandleInputChange = (ev) => {
+    ev.preventDefault();
+    const {value} = ev.target;
+    if(!value) return;
+     
+    const Url = `https://randomuser.me/api/${value}`
+    fetch(Url)
+    .then(res => res.json())
+    .then(console.log)
+    console.log('caught event of input', ev.target.value)
+  }
+  
   return (
     <div className='App'>
    <div className='container' >
     <form>
       <label htmlFor='search' >Game Search</label>
-      <input name='search' id='search'></input>
+      <input name='search' id='search' onChange={HandleInputChange}  ></input>
     </form>
 
     <div className='search-results'>
