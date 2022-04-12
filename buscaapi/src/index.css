@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +12,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   color: #e1e1e1; 
+   background-color:#1e1e1e;
+   width: 100%;
+   min-width: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+  width: 600px;
+  padding-top:100px;
+}
+
+.container form label {
+  display: block;
+  margin-bottom: 0.8em;
+  font-weight: bold;
+}
+
+.container form input {
+  color: inherit;
+  background-color: rgba(255, 255,255, 0);
+  padding: 0.2em;
+  border:none;
+  border-bottom: solid 3px rgba(255, 255,255, 0.2) ;
+  border-radius: 8px 8px 0 0;
+  font-size: 3.5rem;
+  font-weight: bold;
+  width: 100%;
+  outline: none;
+  transition: background-color 0.5 ease-in ;
+}
+
+.container form input:focus{
+  background-color: rgba(255, 255,255, 0.5)
+}
+
+.container .search-results ul {
+  
 }
