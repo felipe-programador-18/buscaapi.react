@@ -54,6 +54,11 @@ code {
   background-color: rgba(255, 255,255, 0.5)
 }
 
-.container .search-results ul {
-  
+.container .search-results ul li {
+ font-size: 1.5rem;
+ font-weight: bold;
+ color: rgba(255,255,255,0.5);
+ list-style-type: '\2b50';
+ list-style-position: inside;
+ 
 }

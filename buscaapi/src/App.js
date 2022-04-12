@@ -11,9 +11,9 @@ function App() {
 
     <div className='search-results'>
       <ul>
-        <li>Mario</li>
-        <li>zelda</li>
-        <li>Mario-card</li>
+        <li> <span>Mario</span></li>
+        <li> <span>zelda</span></li>
+        <li><span>Mario-card</span></li>
       </ul>
     </div>
    </div>
