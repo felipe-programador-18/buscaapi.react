@@ -1,8 +1,8 @@
-
 import './App.css'
 
 function App() {
   return (
+    <div className='App'>
    <div className='container' >
     <form>
       <label htmlFor='search' >Game Search</label>
@@ -17,6 +17,7 @@ function App() {
       </ul>
     </div>
    </div>
+  </div>
   );
 }
 
